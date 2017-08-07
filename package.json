@@ -6,10 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Novapierce1/Chirper-Express.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Novapierce1/Chirper-Express/issues"
+  },
+  "homepage": "https://github.com/Novapierce1/Chirper-Express#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
+    "body-parser": "latest",
     "express": "latest",
     "shortid": "^2.2.8"
   }
