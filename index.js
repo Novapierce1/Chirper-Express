@@ -13,22 +13,23 @@ console.log ("starting server");
 
 app.post('/api/chirps', function (req, res) {
     fs.readFile(jsonPath, function (err, file) {
-        if (err){
+        if (err) {
             res.writeHead(500);
         } else {
-            var data = JSON.parse(file)
-            var chirps = req.body
+            var data = JSON.parse(file);
+            var chirps = req.body;
             chirps.id = shortid.generate();
-            data.push(chirps);
-            fs.writeFile(jsonPath, JSON.stringify(data), function(err, success){
-                if (err){
-                    res.writeHead(500);
-                } else {
-                    res.send(req.body);
-                }
-            })
         }
-    })
+        data.push(chirps);
+        fs.writeFile(jsonPath, JSON.stringify(data), function(err, success){
+            
+            if (err) {
+                res.writeHead(500);
+            } else {
+                res.send(req.body);
+            }
+        });
+    });
 });
 
 app.put('/api/chirps/one/:user', function(req, res){
@@ -37,7 +38,7 @@ app.put('/api/chirps/one/:user', function(req, res){
             res.writeHead(500);
         } else {
             var arr = JSON.parse(file);
-            var user = req.params.user
+            var user = req.params.user;
             var answere = arr.filter(function(chirp){
                     if (chirp.user){
                         if (chirp.user.toLowerCase().trim()===user.toLowerCase().trim()) {
@@ -45,14 +46,14 @@ app.put('/api/chirps/one/:user', function(req, res){
                         }
                     }
                 });
-            if (answere){
+            if (answere) {
                 res.send(answere);
             } else {
                 res.sendStatus(404);
             }
         }
-    })
-})
+    });
+});
 
 app.get('/api/chirps', function(req, res) {
     fs.readFile(jsonPath, function(err, file){
@@ -60,7 +61,7 @@ app.get('/api/chirps', function(req, res) {
             res.status(500).send('Not able to read file');
         }
         res.send(file);
-    })
+    });
 }); 
 
 app.get('/api/chirps/one/:id', function(req, res) {
@@ -71,7 +72,7 @@ app.get('/api/chirps/one/:id', function(req, res) {
             var arr = JSON.parse(file);
             var id = req.params.id;
             var answere;
-            arr.forEach(function(chirp){
+            arr.forEach(function(chirp) {
                 if (chirp.id === id) {
                     answere = chirp;
                 }
@@ -82,7 +83,7 @@ app.get('/api/chirps/one/:id', function(req, res) {
                 res.sendStatus(404);
             }
         }
-    })
+    });
 }); 
 
 app.delete('/api/chirps/one/:id', function (req, res){
@@ -109,9 +110,9 @@ app.delete('/api/chirps/one/:id', function (req, res){
                 } else {
                     res.send(404);
                 }
-            })
+            });
         }
-    })
+    });
 });
 
 app.listen(3000);
