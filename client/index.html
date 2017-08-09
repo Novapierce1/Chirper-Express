@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/styles.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.min.js"></script>
+  </head>
+  <body id="frontpage">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" >Dark Secter</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a class="navbuttons" href="#/"> ||Home|| </a></li>
+          <li><a class="navbuttons" href="#/add"> ||New Post|| </a></li>
+          <li><a class="navbuttons" href="#/list"> ||List|| </a></li>
+          <li><a class="navbuttons" href="#/users"> ||Users|| </a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <img class="symbol" src="https://content.invisioncic.com/Mwarframe/pages_media/1_LunaroMoonTeamCrest.png" alt="symbol">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+      <a href="https://www.reddit.com/r/Warframe/">WARFRAME Reddit</a>
+      <a href="http://warframe.wikia.com/wiki/WARFRAME_Wiki">WARFRAME Wiki</a>
+      <a href="https://www.warframe.com/">WARFRAME.com</a>
+      <a href="https://www.youtube.com/channel/UCBIdHvSAyoud-CNZOVKW2-w">WARFRAME YouTube</a>
+      <a href="https://twitter.com/PlayWarframe?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">WARFRAME Twitter</a>
+      
+    </div>
+
+    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <div ng-view></div>
+	  <script src="app/app.js"></script>
+  </body>
+</html>`

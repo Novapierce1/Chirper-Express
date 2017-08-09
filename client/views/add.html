@@ -1,0 +1,37 @@
+<div class="banner">
+    <h1 class= "welcome" >Identify Yourself Tenno!</h1>
+</div>
+<form name="postForm">
+    <fieldset class="form-group">
+        <input name="email" class="frontdoor" type= "E-mail" placeholder= "E-mail">
+    </fieldset>
+    <fieldset>
+        <input name="user" class="frontdoor" type= "username" placeholder= "Username" ng-model="user">
+    <fieldset class="form-group">
+        <input name="alias" class="frontdoor" type= "alias" placeholder= "In game name" ng-model="alias">
+    </fieldset>
+    <fieldset class="form-group">
+        <select ng-model="rank" name="masteryrank" id="rank">
+            <option value= "1">Mastery Rank 1-5</option>
+            <option value= "2">Mastery Rank 6-10</option>
+            <option value= "3">Mastery Rank 11-15</option>
+            <option value= "4">Mastery Rank 16-20</option>
+            <option value= "5">Mastery Rank 21-25</option>
+            <option value= "6">Mastery Rank 26-30</option>
+        </select>
+    </fieldset>
+    <fieldset class="form-group">
+        <textarea name="message" class="textarea" type= "Message" placeholder= "Thoughts for the lotus" ng-model="message"/>
+    </fieldset>
+</form>
+
+<div>
+    <h2 class="user" ng-model="user" >{{user}}</h2>
+    <h1 class="alias" ng-model="alias" >{{alias}}</h1>
+    <p class="message" ng-model="message">{{message}}</p>
+</div>
+<div ng-controller="addController">
+    <a href="#/list">
+        <button ng-click="posts()"  type="submit" value="submit" class="frontdoor" class="frontdoor">Consighn to the Darksector</button>
+    </a>
+</div>

@@ -1,0 +1,11 @@
+<div class="banner">
+    <h1 class= "welcome">Tenno Listing</h1>
+</div>
+<div  ng-controller="userController">
+    <ul>
+        <li class="posts" style="border: 2px solid goldenrod; border-right-width:20px; margin-top: 5px" ng-repeat="user in data">
+            <p class= "message"> User: {{user}} </p>
+               <button ng-click="getUserPosts(user)" type="submit" value="submit" class="optionbutton">[View All Posts]</button>
+        </li>
+    </ul>
+</div>

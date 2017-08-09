@@ -1,0 +1,21 @@
+<div class="banner">
+    <h1 class= "welcome">Welcome Tenno</h1>
+</div>
+<div  ng-controller="listController">
+    <ul>
+        <li class="posts" style="border: 2px solid goldenrod; border-right-width:20px; margin-top: 5px" ng-repeat="post in data">
+
+            <p class= "message">Tenno: {{post.alias}}</p>
+            <p class= "message">User: {{post.user}}</p>
+            <p class= "listinfo">Message: {{post.message}}</p>
+            
+                <button ng-click="getId(post.id)" type="submit" value="submit" class="optionbutton">[View post]</button>
+                <button ng-click="remove(post.id)" type="submit" value="submit" class="optionbutton">[Delete]</button>
+        </li>
+    </ul>
+</div>
+
+<a href="#/add">
+        <button type="submit" value="submit" class="frontdoor" class="frontdoor">Add a post</button>
+</a>
+

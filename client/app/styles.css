@@ -1,0 +1,193 @@
+
+
+.banner{
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
+    background-size:cover;
+}
+
+.navbuttons{
+    color: goldenrod;
+}
+
+.optionbutton {
+    background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    color: goldenrod;
+    font-size: 15px;
+    border: 2px goldenrod;
+    border-style: dotted solid;
+    border-radius: 15px;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.welcome {
+    font-size: 50px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    top: 50%;
+    border-radius: 15px;
+}
+
+.frontdoor { 
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    border: 2px goldenrod;
+    border-style: dotted solid;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+#rank{
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    border: 2px dotted whitesmoke;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.user {
+    font-size: 40px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+
+.alias {
+    font-size: 40px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.listinfo{
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+}
+
+.message {
+    font-size: 24px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+}
+
+.email{
+    width: 25%;
+    left: 10em;
+}
+
+.textarea{font-size: 20px;
+    color: goldenrod;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    display:block;
+    padding:3px;
+    margin-top: 3px;
+    background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    border-radius: 15px;
+}
+
+.validate{
+    font-size: 24px;
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    color: goldenrod;
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.posts{
+    background-image: url(https://static1.squarespace.com/static/5526613ce4b096c584414d38/t/55271cf6e4b0c120ebd9d53c/1428626678936/Grey-Banner-Large-940434-3-21-2013.jpg?format=1500w);
+    background-size:cover;
+    height: 100%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.topnav {
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
+}
+
+.navbuttons{
+    font-family: 'Diavlo', Arial, Helvetica, sans-serif;
+    color: goldenrod;
+    position: relative;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: url(http://eachdaypaid.com/wp-content/uploads/2014/12/carbon-fiber-1024x576.png);
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: goldenrod;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: darkgray;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.symbol{
+    height: 250px;
+    width: 260px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+#frontpage {
+    background-image: url('https://images2.alphacoders.com/616/thumb-1920-616974.jpg') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
