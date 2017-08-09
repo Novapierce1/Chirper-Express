@@ -52,8 +52,8 @@ router.route('/one/:id')
                             chirp.Name = req.body.Name,
                             chirp.time = req.body.time
                         }
-                    }
-                });
+                    });
+                }
                 if (isFound) {
                 fs.writeFile(jsonPath, JSON.stringify(parsed), function(err) {
                     if (err) {
